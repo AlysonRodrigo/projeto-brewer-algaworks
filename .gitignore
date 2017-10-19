@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 .settings/
 .project
 .classpath
 target/
 .tern-project
+=======
+/target/
+>>>>>>> 6944332a660b7863192b92250182e97e8526a0e8
