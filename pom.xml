@@ -21,6 +21,7 @@
 		<spring.bom.version>4.3.0.RELEASE</spring.bom.version>
 		<thymeleaf.version>3.0.8.RELEASE</thymeleaf.version>
 		<hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
+		<thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
 	</properties>
 
 	<dependencyManagement>
@@ -36,7 +37,7 @@
 	</dependencyManagement>
 
 	<dependencies>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -64,7 +65,7 @@
 			<version>${thymeleaf.version}</version>
 			<scope>compile</scope>
 		</dependency>
-	
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
@@ -72,8 +73,14 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect -->
+		<dependency>
+			<groupId>nz.net.ultraq.thymeleaf</groupId>
+			<artifactId>thymeleaf-layout-dialect</artifactId>
+			<version>${thymeleaf-layout-dialect.version}</version>
+			<scope>compile</scope>
+		</dependency>
 
-	
 	</dependencies>
 
 	<build>

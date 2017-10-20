@@ -1,5 +1,7 @@
 package br.com.cookiesoft.brewer.config;
 
+import nz.net.ultraq.thymeleaf.LayoutDialect;
+
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -45,6 +47,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 		SpringTemplateEngine engine = new SpringTemplateEngine();
 		engine.setEnableSpringELCompiler(true);
 		engine.setTemplateResolver(templateResolver());
+		engine.addDialect(new LayoutDialect());
 		return engine;
 	}
 	

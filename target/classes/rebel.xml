@@ -9,9 +9,16 @@
 	<classpath>
 		<dir name="C:/Users/Cookiesoft/workspace-jee/brewer/target/classes">
 		</dir>
+		<dir name="C:/Users/Cookiesoft/workspace-jee/brewer/target/test-classes">
+		</dir>
 	</classpath>
 
 	<web>
+		<link target="/">
+			<dir name="C:/Users/Cookiesoft/workspace-jee/brewer/target/m2e-wtp/web-resources">
+				<exclude name="/"/>
+			</dir>
+		</link>
 		<link target="/">
 			<dir name="C:/Users/Cookiesoft/workspace-jee/brewer/src/main/webapp">
 			</dir>
